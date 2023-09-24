@@ -1,0 +1,8 @@
+@import 'reset';
+@import 'sample';
+@import 'mixins';
+@import 'header', 'content', 'footer';
+
+body {
+    margin: 0;
+}

@@ -1,0 +1,202 @@
+.container-header {
+    width: 1095px;
+    margin: 0 auto;
+
+    @include for-big-desktop-up {
+
+        width: 1200px;
+
+    }
+
+    @include for-desktop-up {
+
+        width: 1000px;
+
+    }
+
+    @include for-tablet-landscape-up {
+
+        width: 700px;
+
+    }
+
+    @include for-tablet-portrait-up {
+
+        width: 400px;
+
+    }
+
+    @include for-phone-only {
+
+        width: 200px;
+
+    }
+}
+
+.background-header {
+    background-image: url(../images/main-img-header.jpg);
+    height: 865px;
+    background-size: cover;
+}
+
+.block-header {
+    @extend %color-white;
+
+    .block-header-cap {
+        padding: 42px 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+
+            a {
+                margin: 0 42px 0 0;
+                font-family: 'Roboto', sans-serif;
+                @extend %weight-thin;
+                font-size: 18px;
+                @extend %color-white;
+            }
+        }
+
+        @include for-big-desktop-up {
+
+
+            width: 80%;
+
+        }
+
+        @include for-tablet-landscape-up {
+
+            display: none;
+
+        }
+
+        @include for-tablet-portrait-up {
+
+            display: none;
+
+        }
+
+        @include for-phone-only {
+
+            display: none;
+
+        }
+    }
+
+    .block-phone {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        #menu-toggle {
+            opacity: 0;
+        }
+
+        .menu-bottom {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .menu-bottom>span,
+        .menu-bottom>span::before,
+        .menu-bottom>span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #616161;
+        }
+
+        .menu-bottom>span::before {
+            content: '';
+            top: -8px;
+        }
+
+        .menu-bottom>span::after {
+            content: '';
+            top: 8px;
+        }
+
+        @include for-big-desktop-up {
+
+            display: none;
+
+
+        }
+
+        @include for-desktop-up {
+
+            display: none;
+
+
+        }
+
+        @include for-tablet-landscape-up {
+
+            width: 700px;
+            display: block;
+
+            a {
+                position: absolute;
+                top: 26px;
+                left: 150px;
+            }
+
+        }
+
+        @include for-tablet-portrait-up {
+
+            width: 400px;
+            display: block;
+
+            a {
+                position: absolute;
+                top: 26px;
+                left: 150px;
+            }
+        }
+
+        @include for-phone-only {
+            display: block;
+            width: 200px;
+
+            a {
+                position: absolute;
+                top: 26px;
+                left: 150px;
+            }
+
+        }
+    }
+
+
+    .block-header-text {
+        padding: 202px 0 0;
+        font-family: 'Nunito', sans-serif;
+        width: 75%;
+
+        h1 {
+            @extend %weight-ex-bold;
+            font-size: 60px;
+            line-height: 81px;
+        }
+
+        p {
+            padding: 21px 0 0;
+            font-size: 29px;
+            @extend %weight-thin;
+            line-height: 39px;
+        }
+    }
+
+}

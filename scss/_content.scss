@@ -1,0 +1,359 @@
+.container {
+    width: 1240px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+
+    
+
+    @include for-desktop-up {
+        margin: 0 auto;
+        width: 800px;
+
+    }
+
+    @include for-tablet-landscape-up {
+        margin: 0 auto;
+        width: 700px;
+
+    }
+
+    @include for-tablet-portrait-up {
+        margin: 0 auto;
+        width: 400px;
+
+    }
+
+    @include for-phone-only {
+        margin: 0 auto;
+        width: 200px;
+
+    }
+}
+
+.background-main-block {
+    background: #E5E5E5;
+}
+
+.block-chair-stairs {
+    padding: 74px 0 110px;
+    display: flex;
+    justify-content: space-between;
+
+
+    .block-arrow-text {
+        height: 133px;
+        display: flex;
+        align-items: center;
+        @extend %color-black;
+        @extend %bgcolor-white;
+
+        img {
+            height: 33px;
+            margin: 0 24px 0 31px;
+        }
+
+        p {
+            font-size: 14px;
+            @extend %weight-ex-bold;
+        }
+    }
+
+    @include for-desktop-up {
+        width: 60%;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+
+    @include for-tablet-landscape-up {
+
+
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    @include for-tablet-portrait-up {
+
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    @include for-phone-only {
+
+        display: none;
+
+    }
+}
+
+.block-company {
+    @extend %color-black;
+    display: flex;
+    padding: 0 0 141px 0;
+
+    .block-company-text {
+        width: 62%;
+
+        h2 {
+            font-size: 36px;
+            @extend %weight-bold;
+            margin: 0 0 105px 0;
+        }
+
+        .block-company-img-text {
+            margin: 54px 0 0;
+            display: flex;
+
+            img {
+                margin: 0 30px 0 0;
+
+                @include for-desktop-up {
+
+                    display: none;
+
+                }
+
+                @include for-tablet-landscape-up {
+
+                    display: none;
+
+                }
+
+                @include for-tablet-portrait-up {
+
+                    display: none;
+
+                }
+
+                @include for-phone-only {
+
+                    display: none;
+
+                }
+            }
+
+            .block-company-text {
+
+                h3 {
+                    @extend %weight-thin;
+                    font-size: 29px;
+
+                }
+
+                p {
+                    margin: 10px 0 0 0;
+                    @extend %weight-thin;
+                    font-size: 21px;
+                }
+            }
+
+        }
+    }
+
+    .block-company-img {
+        position: relative;
+        height: 431px;
+        width: 476px;
+        @extend %bgcolor-orange;
+        padding: 10px 53px;
+
+        img {
+            position: absolute;
+            display: block;
+            top: -44px;
+        }
+
+        @include for-desktop-up {
+
+            display: none;
+
+        }
+
+        @include for-tablet-landscape-up {
+
+            display: none;
+
+        }
+
+
+        @include for-tablet-portrait-up {
+
+            display: none;
+
+        }
+
+        @include for-phone-only {
+
+            display: none;
+
+        }
+
+    }
+}
+
+.block-number-seach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF5DA;
+    height: 437px;
+    box-sizing: border-box;
+    padding: 127px 0 0;
+
+    h4 {
+        font-size: 36px;
+        @extend %weight-bold;
+        @extend %color-grey;
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        font-size: 29px;
+        @extend %weight-thin;
+        color: #646464;
+    }
+
+    .block-number {
+        display: flex;
+        @extend %bgcolor-white;
+        border: 1px solid black;
+        width: 56%;
+        height: 78px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 18px 0 0 0;
+
+        .block-red-blue-img {
+            margin: 0 10px;
+
+            img {
+                margin: 0 5px;
+            }
+        }
+
+        .block-phone-number {
+            input {
+                width: 300px;
+                height: 40px;
+            }
+        }
+
+        .block-button-seach {
+            margin: 0 0 0 20px;
+            @extend %bgcolor-orange;
+            height: 61px;
+            width: 151px;
+
+            a {
+                display: block;
+                @extend %color-black;
+                font-size: 29px;
+                @extend %weight-thin;
+                margin: 16px 43px 11px 40px;
+            }
+        }
+    }
+
+    @include for-desktop-up {
+
+        display: none;
+
+    }
+
+    @include for-tablet-landscape-up {
+
+        display: none;
+
+    }
+
+    @include for-tablet-portrait-up {
+
+        display: none;
+
+    }
+
+    @include for-phone-only {
+
+        display: none;
+
+    }
+}
+
+.block-gallery {
+    padding: 122px 0 128px 0;
+
+    h5 {
+        @extend %color-grey;
+        font-size: 36px;
+        @extend %weight-bold;
+        margin: 0 0 45px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            width: 292px;
+            height: 406px;
+            margin: 0 0 23px 0;
+
+            @include for-desktop-up {
+
+                width: auto;
+                height: auto;
+
+            }
+
+            @include for-tablet-landscape-up {
+
+                width: auto;
+                height: auto;
+
+            }
+
+            @include for-tablet-portrait-up {
+
+                width: auto;
+                height: auto;
+
+            }
+
+            @include for-phone-only {
+
+                width: auto;
+                height: auto;
+
+            }
+        }
+    }
+
+    @include for-desktop-up {
+
+        display: none;
+
+    }
+
+    @include for-tablet-landscape-up {
+
+        display: none;
+
+    }
+
+    @include for-tablet-portrait-up {
+
+        display: none;
+
+    }
+
+    @include for-phone-only {
+
+        display: none;
+
+    }
+}
